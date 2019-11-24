@@ -1,8 +1,8 @@
 =begin
 Заполнить массив числами от 10 до 100 с шагом 5
 =end
-arr = (10..100).to_a
-5.times do arr
-  puts "#{arr}"
+for i in 10..100
+  if (i % 5).zero?()
+puts "Value of local variable is #{i}"
+  end
 end
-

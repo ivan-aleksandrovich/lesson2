@@ -14,7 +14,9 @@ year = gets.chomp.to_i
 arr = [31,28,31,30,31,30,31,31,30,31,30,31]
 
 if year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)
-print "Year is leap"
+puts "Year is leap"
+value  += value
+puts value
 end
 value = arr
            .[](0, day-1)

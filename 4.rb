@@ -2,15 +2,13 @@
 Заполнить хеш гласными буквами, 
 где значением будет являтся порядковый номер буквы в алфавите (a - 1)
 =end
-language = {
-    а:1,
-    о: 16,
-    и: 10,
-    е: 6,
-    ё: 7,
-    э: 31,
-    ы: 29,
-    ю:32,
-    я:33
-}
-language.each {|x| print x }
+
+arr = ('а'..'я').to_a
+
+vowel = ["а", "я", "о", "у", "ю", "ы", "и"]
+vowels = {}
+arr.each_with_index do |letter, value|
+  vowels[letter] = value + 1 if vowel.include?(letter)
+end
+  
+puts vowels
